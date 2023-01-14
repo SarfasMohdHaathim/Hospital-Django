@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+{% load crispy_forms_tags %}
+<div class="container  w-50 bg-primary text-center text-white mt-5"><div class="mx-3 fs-1">Make an Appointment</div>
+<div class="container w-50 bg-primary text-center text-white">
+<form action="" method="POST">
+  {% csrf_token %}
+  {{forms|crispy}}<br>
+  <button type="submit" class="btn btn-dark mb-3">SUBMIT</button>
+  
+</form>
+</div></div>
+<style>
+  input{
+    width: 50%;
+
+  }
+  select{
+    width: 50%;
+  }
+</style>
+
+  {% endblock main %}

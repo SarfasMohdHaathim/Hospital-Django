@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+
+
+<div class="container">
+  <div class="row">
+  {% for x in doc %}
+
+<div class="card my-auto mx-auto" style="width: 18rem;">
+  <img src="{{x.doc_image.url}}"  alt=""  class="">
+  <div class="card-body">
+    <h5 class="card-title">{{x.doc_name}}</h5>
+<p class="card-text">{{x.doc_spec}}</p>
+    <p class="card-text">{{x.dept_name}}</p>
+    <p class="card-text">{{x.dept_name.department_description}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+{% endfor %}
+
+</div>
+</div>
+  {% endblock main %}

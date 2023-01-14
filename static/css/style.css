@@ -1,0 +1,9 @@
+li:hover{
+    background-color: rgb(211, 211, 211);
+    border-radius: 20px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
